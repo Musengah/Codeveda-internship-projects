@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Elements Demo</h1>
+
+    <!-- Dropdown -->
+    <label for="colorSelect">Choose a color:</label>
+    <select id="colorSelect">
+        <option value="">--Select--</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightcoral">Light Coral</option>
+    </select>
+
+    <!-- Modal Trigger -->
+    <button id="openModalBtn">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <p>This is a modal popup!</p>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <button class="tooltip">Hover me
+        <span class="tooltiptext">Tooltip info shown on hover!</span>
+    </button>
+
+    <!-- Accordion -->
+    <div class="accordion-section">
+        <button class="accordion">Accordion 1</button>
+        <div class="panel">
+            <p>This is the first accordion panel.</p>
+        </div>
+        <button class="accordion">Accordion 2</button>
+        <div class="panel">
+            <p>This is the second accordion panel.</p>
+        </div>
+    </div>
+
+    <!-- Counter -->
+    <div class="counter-section">
+        <button id="decrementBtn">-</button>
+        <span id="counterValue">0</span>
+        <button id="incrementBtn">+</button>
+    </div>
+
+    <!-- Image Preview -->
+    <div class="image-preview-section">
+        <label for="imgInput">Select an image:</label>
+        <input type="file" id="imgInput" accept="image/*">
+        <br>
+        <img id="preview" src="" alt="Image Preview" style="max-width:150px; display:none;">
+    </div>
+
+    <!-- Toggle Switch -->
+    <div class="toggle-section">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <span id="themeLabel">Light Mode</span>
+    </div>
+
+    <!-- Form -->
+    <form id="contactForm">
+        <h2>Contact Us</h2>
+        <label>Name: <input type="text" id="name" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <button type="submit">Submit</button>
+        <div id="formMessage"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
