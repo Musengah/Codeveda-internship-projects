@@ -72,7 +72,7 @@ export default {
       this.error = null;
 
       try {
-        const apiKey = "7e9b2b35f24250c58c3a894a88f2b63b";
+        const apiKey = "Replace with own openweathermap API key";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${apiKey}&units=metric`;
 
         const response = await axios.get(url);
